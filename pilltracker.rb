@@ -62,16 +62,16 @@ __END__
 @@ index
 %ul.ui-listview{:data => {:role => 'listview', :theme => 'b'}}
   %li{:data => {:theme => 'a'}}
-    %a{href:'/new'} New
+    %a{href:'/new/'} New
   - @events.each do |event|
     %li
       %img{:style => 'float:left;margin:1em;',
-           :src => event.type == 'took' ? 'pill.png' : 'stethoscope.png'}
+           :src => event.type == 'took' ? 'pills.png' : 'stethoscope.png'}
         %div&= event.time.strftime("%Y-%m-%d %H:%M")
         %div&= "#{event.type}: #{event.description}"
 
 @@ new
-%form{:action => '/new', :method => 'post'}
+%form{:action => '/new/', :method => 'post'}
   %p
     %label{:for => 'event'} Event
   %p
