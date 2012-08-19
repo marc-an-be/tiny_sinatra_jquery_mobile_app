@@ -62,7 +62,7 @@ __END__
 @@ index
 %ul.ui-listview{:data => {:role => 'listview', :theme => 'b'}}
   %li{:data => {:theme => 'a'}}
-    %a{href:'/new/'} New
+    %a{:href => '/new/'} New
   - @events.each do |event|
     %li
       %img{:style => 'float:left;margin:1em;',
