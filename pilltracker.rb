@@ -66,7 +66,7 @@ __END__
   - @events.each do |event|
     %li
       %img{:style => 'float:left;margin:1em;',
-           :src => event.type == 'took' ? 'pills.png' : 'stethoscope.png'}
+           :src => event.type == 'took' ? '/pills.png' : '/stethoscope.png'}
         %div&= event.time.strftime("%Y-%m-%d %H:%M")
         %div&= "#{event.type}: #{event.description}"
 
