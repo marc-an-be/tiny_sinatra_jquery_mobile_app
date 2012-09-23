@@ -71,7 +71,7 @@ __END__
         %div&= "#{event.type}: #{event.description}"
 
 @@ new
-%form{:action => '/new/', :method => 'post'}
+%form{:action => '/new/', :method => 'post', 'data-ajax' => 'false'}
   %p
     %label{:for => 'event'} Event
   %p
